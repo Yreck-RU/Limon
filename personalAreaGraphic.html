@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы-->
+		<title>Title</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+		<!--===============================-->
+		<!--Libs-->
+
+			<!--JQ--><script src="libs/jquery.js"></script>
+
+		<!--===============================-->
+		<!--Css-->
+			<link rel="stylesheet" href="css/style.css" />
+		<!--===============================-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<a href="" class="header__logo">
+						<img src="img/header/Logo.png" alt="">	
+					</a>
+					<div data-da=".burger__wrapper, 767, last" class="header-nav">
+						<a href="" class="header-nav__link">
+							Главная
+						</a>
+						<a href="" class="header-nav__link">
+							О нас
+						</a>
+						<a href="" class="header-nav__link">
+							Как обменять
+						</a>
+						<a href="" class="header-nav__link">
+							Контакты
+						</a>
+						<div data-da=".footer__body, 767, last" class="header-nav__link header-languages header-nav-language__wrapper content-header__language">
+							<span class="header-nav-language header-languages__title language-content-header__button">
+								Ru <span class="icon-pointer"></span>
+							</span>
+							<div class="language-content-header__list header-languages__wrapper">
+								<a href="" class="language-content-header__link link-hover">
+									EN
+								</a>
+								<a href="" class="language-content-header__link link-hover">
+									RU
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="header-button header-button_pc">
+						<a href="" class="header-button__link header-button__link_to-come-in">
+							<img src="img/header/1.png" alt="	">
+							<span>Войти</span>	
+						</a>
+						<span>или</span>
+						<a href="" class="header-button__link header-button__link_register">
+							Зарегистрируйтесь
+						</a>
+					</div>
+					<div class="header-button header-button_mb">
+						<span class="icon-human-circle"></span>
+					</div>
+
+				</div>
+				<div class="burger menu__body">
+					<div class="burger__heder">
+						
+					</div>
+					<div class="burger__wrapper">
+				
+					</div>
+					<div class="burger__footer">
+						
+					</div>
+				</div>
+				<div class="burger">
+					<div class="burger__wrapper burger__wrapper_pd-top">
+						<div class="popup__title">
+							<span>Войти в Личный Кабинет</span>
+						</div>
+						<form class="popup-form _form-validation__wrapper"> 
+							<div class="popup-form__title">
+								Введите ваш E-mail:
+							</div>
+							<div class="input__wrapper popup-form__wrapper _form-validation__body">
+								<span class="icon-letter icon"></span>
+								<input type="email" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="E-mail">
+							</div>
+							<div class="popup-form__title">
+								Пароль <a href="popup-password-recovery" class="popup-link hover-black-link">Забыли пароль?</a>
+							</div>
+							<div class="input__wrapper popup-form__wrapper _form-validation__body">
+								<span class="icon-lock icon"></span>
+								<input type="password" name="" class="input input-grey _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0" placeholder="********************">
+							</div>
+							<div class="popup-text">
+								Переходя в личный кабинет, вы соглашаетесь с условиями и правилами сервиса.
+							</div>
+				
+							
+							<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Войти</button>
+							<span class="popup-form__or">или</span>
+
+							<button onclick="return false" class="popup-form__button hover-grei-button _form-validation__button">Зарегистироваться</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="personal-area">
+			<div class="container">
+				<div class="personal-area__wrapper _tab">
+					<div class="personal-area-header">
+						<div class="personal-area-header__title">
+							Личный кабинет
+						</div>
+						<div class="personal-area-header__list _tab-link-body">
+							<a href="#_tab-body1" onclick="return false" class="personal-area-header__link _tab-link active">
+								<span class="icon-human-circle"></span>
+								Профиль
+							</a>
+							<a href="#_tab-body2" onclick="return false" class="personal-area-header__link _tab-link">
+								<span class="icon-check"></span>
+								Профиль
+							</a>
+							<a href="#" class="personal-area-header__link">
+								<span class="icon-exit"></span>
+								Профиль
+							</a>
+						</div>
+					</div>
+					<div class="personal-area-wrapper _tab-wrapper">
+						<div class="personal-area-data _tab-body" id="_tab-body1">
+							<div class="personal-area-data__blok">
+								<form class="personal-area-data__form">
+									<div class="personal-area-data__title">
+										<span>
+											Личные данные
+										</span>
+										<a href="">
+											<span class="icon-exit"></span>
+											Изменить
+										</a>
+									</div>
+									<div class="personal-area-data__form-content">
+										<div class="popup-form__title">
+											Логин
+										</div>
+										<div class="input__wrapper popup-form__wrapper _form-validation__body">
+											<span class="icon-human icon"></span>
+											<input type="text" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="Popov Ivan Petrovich">
+										</div>
+										<div class="popup-form__title">
+											Номер телефона:
+										</div>
+										<div class="input__wrapper popup-form__wrapper _form-validation__body">
+											<span class="icon-telephone icon"></span>
+											<input type="text" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="3(098)765-43-21">
+										</div>
+										<div class="popup-form__title">
+											E-mail:
+										</div>
+										<div class="input__wrapper popup-form__wrapper _form-validation__body">
+											<span class="icon-letter icon"></span>
+											<input type="email" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="whemper@gmail.com">
+										</div>
+										<div class="popup-form__title">
+											Телеграм:
+										</div>
+										<div class="input__wrapper popup-form__wrapper _form-validation__body">
+											<span class="icon-telegram icon"></span>
+											<input type="text" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="@lancerpro">
+										</div>
+										<div class="popup-form__title">
+											Пароль 
+										</div>
+										<div class="input__wrapper popup-form__wrapper _form-validation__body">
+											<span class="icon-lock icon"></span>
+											<input type="password" name="" class="input input-grey _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0" placeholder="********************">
+										</div>
+									</div>
+									<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Сохранить</button>
+								</form>
+							</div>
+							<div class="personal-area-data__blok">
+								<form class="personal-area-data__form">
+									<div class="personal-area-data__title">
+										<span>
+											Верификация документов
+										</span>
+									</div>
+									<div class="personal-area-data__form-content">
+										<div class="popup-form__title">
+											Страница паспорта с вашим фото
+										</div>
+										<div class="input-file__wrapper input-file-wrapper-passed  _form-validation__body">
+											<span class="input-file-wrapper-passed__text">
+												Верификация пройдена
+											</span>
+											<span class="input-file-wrapper-passed__icon icon-square-jackdaw">
+												
+											</span>
+										</div>
+										<div class="popup-form__title">
+											Страница паспорта с регистрацией
+										</div>
+										<div class="input-file__wrapper input-file-wrapper-not-passed _form-validation__body">
+											<span class="input-file-wrapper-not-passed__text">
+												Верификация пройдена
+											</span>
+											<span class="input-file-wrapper-not-passed__icon icon-square-cross">
+												
+											</span>
+										</div>
+										<div class="popup-form__title">
+											Селфи с паспортом и подписью “Lemon.pl”
+										</div>
+										<div class="input-file__wrapper _form-validation__body">
+											<input name="file" type="file" name="file" id="input__file-1" class="input__file _form-validation__input" multiple>
+											<label for="input__file-1" class="input__file-button profil-input__file">
+												<span class="input__file-button-text">Выбирите файл</span>
+												<span class="input__file-icon-wrapper icon-document">
+													<span>Загрузить</span>
+												</span>
+											</label>
+										</div>
+										<button onclick="return false" class="popup-form__button hover-grei-button _form-validation__button">Загрузить</button>
+									</div>
+									<div class="personal-area-data__text_b">
+										Пройдите автоматическую верификацию документов удостоверяющих вашу личность
+									</div>
+									<div class="personal-area-data__text">
+										Либо пройдите live Верификацию с нашим менеджером онлайн или договоритесь на верификацию документов при личной встрече в офисе
+									</div>
+									<div href="" class="personal-area-data__button_active">
+										<span class="icon-square-jackdaw"></span>
+										Верификация пройдена
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="personal-area-applications _tab-body hide" id="_tab-body2">
+							<div class="personal-area-applications__title">
+								Мои заявки
+							</div>
+							<div class="personal-area-applications__wrapper">
+								<div class="personal-area-applications__blok">
+									<div class="personal-area-applications__img">
+										<img src="img/index-calculator/1.svg" alt="">
+										<img src="img/index-calculator/2.svg" alt="">
+									</div>
+
+									<div class="personal-area-applications-values">
+										<div class="">
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-left">
+												Номер заявки #W972785022
+											</div>
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-reght">
+												08.08.2022 в 16:24
+											</div>
+										</div>
+										<div class="">
+											<div class="personal-area-applications-values__text">
+												<span>
+													0.00122416 BTC
+												</span>
+												<span>
+													>
+												</span>
+												<span>
+													0.00122416 USDT
+												</span>
+											</div>
+											<div class="personal-area-applications-values__status">
+												Выполнена
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="personal-area-applications__blok">
+									<div class="personal-area-applications__img">
+										<img src="img/index-calculator/2.svg" alt="">
+										<img src="img/index-calculator/1.svg" alt="">
+									</div>
+
+									<div class="personal-area-applications-values">
+										<div class="">
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-left">
+												Номер заявки #W972785022
+											</div>
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-reght">
+												08.08.2022 в 16:24
+											</div>
+										</div>
+										<div class="">
+											<div class="personal-area-applications-values__text">
+												<span>
+													0.00122416 BTC
+												</span>
+												<span>
+													>
+												</span>
+												<span>
+													0.00122416 USDT
+												</span>
+											</div>
+											<div class="personal-area-applications-values__status">
+												Выполнена
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="personal-area-applications__blok">
+									<div class="personal-area-applications__img">
+										<img src="img/index-calculator/1.svg" alt="">
+										<img src="img/index-calculator/3.svg" alt="">
+									</div>
+
+									<div class="personal-area-applications-values">
+										<div class="">
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-left">
+												Номер заявки #W972785022
+											</div>
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-reght">
+												08.08.2022 в 16:24
+											</div>
+										</div>
+										<div class="">
+											<div class="personal-area-applications-values__text">
+												<span>
+													0.00122416 BTC
+												</span>
+												<span>
+													>
+												</span>
+												<span>
+													0.00122416 USDT
+												</span>
+											</div>
+											<div class="personal-area-applications-values__status">
+												Выполнена
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="personal-area-applications__blok">
+									<div class="personal-area-applications__img">
+										<img src="img/index-calculator/3.svg" alt="">
+										<img src="img/index-calculator/2.svg" alt="">
+									</div>
+
+									<div class="personal-area-applications-values">
+										<div class="">
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-left">
+												Номер заявки #W972785022
+											</div>
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-reght">
+												08.08.2022 в 16:24
+											</div>
+										</div>
+										<div class="">
+											<div class="personal-area-applications-values__text">
+												<span>
+													0.00122416 BTC
+												</span>
+												<span>
+													>
+												</span>
+												<span>
+													0.00122416 USDT
+												</span>
+											</div>
+											<div class="personal-area-applications-values__status">
+												Выполнена
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="personal-area-applications__blok">
+									<div class="personal-area-applications__img">
+										<img src="img/index-calculator/4.svg" alt="">
+										<img src="img/index-calculator/3.svg" alt="">
+									</div>
+
+									<div class="personal-area-applications-values">
+										<div class="">
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-left">
+												Номер заявки #W972785022
+											</div>
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-reght">
+												08.08.2022 в 16:24
+											</div>
+										</div>
+										<div class="">
+											<div class="personal-area-applications-values__text">
+												<span>
+													0.00122416 BTC
+												</span>
+												<span>
+													>
+												</span>
+												<span>
+													0.00122416 USDT
+												</span>
+											</div>
+											<div class="personal-area-applications-values__status personal-area-applications-values__statu_canceled">
+												Отменена
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="personal-area-applications__blok">
+									<div class="personal-area-applications__img">
+										<img src="img/index-calculator/3.svg" alt="">
+										<img src="img/index-calculator/4.svg" alt="">
+									</div>
+
+									<div class="personal-area-applications-values">
+										<div class="">
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-left">
+												Номер заявки #W972785022
+											</div>
+											<div class="personal-area-applications-values__title personal-area-applications-values__title-reght">
+												08.08.2022 в 16:24
+											</div>
+										</div>
+										<div class="">
+											<div class="personal-area-applications-values__text">
+												<span>
+													0.00122416 BTC
+												</span>
+												<span>
+													>
+												</span>
+												<span>
+													0.00122416 USDT
+												</span>
+											</div>
+											<div class="personal-area-applications-values__status personal-area-applications-values__statu_waiting">
+												Ожидает обработки
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pagineishin profil-affiliate-program_pagineishin">
+								<div class="pagineishin__items">
+									<a href="" class="icon-pointer hover-black-link"></a>
+								</div>
+								<div class="pagineishin__items">
+									<a href="" class="hover-black-link">1</a>
+								</div>
+								<div class="pagineishin__items active">
+									<a href="" class="hover-black-link">2</a>
+								</div>
+								<div class="pagineishin__items">
+									<a href="" class="hover-black-link">3</a>
+								</div>
+								<div class="pagineishin__items">
+									<a href="" class="hover-black-link">4</a>
+								</div>
+								<div class="pagineishin__items">
+									<a href="" class="hover-black-link">5</a>
+								</div>
+								<div class="pagineishin__items">
+									<a href="" class="hover-black-link">6</a>
+								</div>
+								<div class="pagineishin__items">
+									<a href="" class="hover-black-link">7</a>
+								</div>
+								<div class="pagineishin__items">
+									<a href="" class="hover-black-link">8</a>
+								</div>
+								<div class="pagineishin__items">
+									<a href="" class="hover-black-link">9</a>
+								</div>
+								<div class="pagineishin__items">
+									<a href="" class="hover-black-link">10</a>
+								</div>
+								<div class="pagineishin__items">
+									<a href="" class="icon-pointer hover-black-link"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<div class="footer-text">
+						<div class="footer-text__title">
+							Lemoon.pl
+						</div>
+						<div class="footer-text__content">
+							Все права защищены. <br>
+							<span>Copyright © 2021-2022</span>
+						</div>
+					</div>
+					<div data-da=".burger__wrapper, 767, last" class="footer__content">
+						<div class="footer__blok footer-blok">
+							<span data-da=".burger__footer, 767, last" class="footer-blok__text">
+								<span>Lemoon sp. z o.o.</span>
+								<span>ul. Chmielna 9, 00-021 Warszawa </span>
+								<span>KRS: 0000881668 </span>
+								<span>NIP: 5252850373</span>
+							</span>
+						</div>
+						<div class="footer__blok footer-blok">
+							<div class="footer-blok__link">
+								<a href="">Регламент сервиса</a>
+							</div>
+							<div class="footer-blok__link">
+								<a href="">Тарифы</a>
+							</div>
+							<div class="footer-blok__link">
+								<a href="">Для юридических лиц</a>
+							</div>
+						</div>
+						<div class="footer__blok footer-blok">
+							<div class="footer-blok__link">
+								<a href="">Политика AML/KYC</a>
+							</div>
+							<div class="footer-blok__link">
+								<a href="">Политика конфиденциальности</a>
+							</div>
+							<div class="footer-blok__link">
+								<a href="">Политика Cookies</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="popup" id="popup-registration">
+			<div class="popup__body">
+				<div class="popup__content">
+					<div class="popup__title">
+						<span>Регистрация</span>
+
+						<a href="#" class="popup__close close-popup">
+							<span></span>
+						</a>
+					</div>
+					<form class="popup-form _form-validation__wrapper"> 
+						<div class="popup-form__title">
+							Логин
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-human icon"></span>
+							<input type="text" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="popup-form__title">
+							E-mail:
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-email icon"></span>
+							<input type="email" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="popup-form__title">
+							Пароль <a href="popup-password-recovery" class="popup-link hover-black-link">Забыли пароль?</a>
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input input-grey _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0" placeholder="********************">
+						</div>
+						<div class="popup-form__title">
+							Пароль
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="popup-form__title">
+							Пароль еще раз
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="input-checkbox input-checkbox_margin-20px _form-validation__body">
+							<input type="checkbox" id="popup-checkbox-1" class="_form-validation__input"> 
+							<label for="popup-checkbox-1">С правилами сервиса ознакомлен и согласен</label>
+						</div>
+						<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-registration">
+			<div class="popup__body">
+				<div class="popup__content">
+
+					<div class="popup__title">
+						<span>Войти в Lemoon</span>
+
+						<a href="#" class="popup__close close-popup">
+							<span></span>
+						</a>
+					</div>
+					<form class="popup-form _form-validation__wrapper"> 
+						<div class="popup-form__title">
+							Введите ваш E-mail:<a href="popup-password-recovery" class="popup-link hover-black-link">Регистрация</a>
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-letter icon"></span>
+							<input type="email" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="E-mail">
+						</div>
+						<div class="popup-form__title">
+							Введите ваш пароль:<a href="popup-password-recovery" class="popup-link hover-black-link">Забыли пароль?</a>
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input input-grey _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0" placeholder="********************">
+						</div>
+						<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-registration">
+			<div class="popup__body">
+				<div class="popup__content">
+
+					<div class="popup__title">
+						<span>Восстановление пароля</span>
+
+						<a href="#" class="popup__close close-popup">
+							<span></span>
+						</a>
+					</div>
+					<form class="popup-form _form-validation__wrapper"> 
+						<div class="popup-form__title">
+							Введите ваш E-mail:<a href="popup-password-recovery" class="popup-link hover-black-link">Регистрация</a>
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-letter icon"></span>
+							<input type="email" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="E-mail">
+						</div>
+						<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Восстановить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-registration">
+			<div class="popup__body">
+				<div class="popup__content">
+
+					<div class="popup__title">
+						<span>Новый пароль</span>
+
+						<a href="#" class="popup__close close-popup">
+							<span></span>
+						</a>
+					</div>
+					<form class="popup-form _form-validation__wrapper"> 
+						<div class="popup-form__title">
+							Придумайте пароль:
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input input-grey _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0" placeholder="********************">
+						</div>
+						<div class="popup-form__title">
+							Повторите ввод пароля
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input input-grey _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0" placeholder="********************">
+						</div>
+						<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Сохарнить пароль</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-registration">
+			<div class="popup__body">
+				<div class="popup__content">
+
+					<div class="popup__title">
+						<span>Регистрация</span>
+
+						<a href="#" class="popup__close close-popup">
+							<span></span>
+						</a>
+					</div>
+					<form class="popup-form _form-validation__wrapper"> 
+						<div class="popup-form__title">
+							Ваше ФИО латинскими буквами:
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-human icon"></span>
+							<input type="text" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="Popov Ivan Petrovich">
+						</div>
+						<div class="popup-form__title">
+							Введите номер телефона:
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-telephone icon"></span>
+							<input type="text" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="380987654321">
+						</div>
+						<div class="popup-form__title">
+							Ваш E-mail:
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-letter icon"></span>
+							<input type="email" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="E-mail">
+						</div>
+						<div class="popup-form__title">
+							Ваш телеграм:
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-telegram icon"></span>
+							<input type="text" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="Ваш телеграм">
+						</div>
+						<div class="popup-form__title">
+							Придумайте пароль:
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="********************">
+						</div>
+						<div class="popup-form__title">
+							Повторите ввод пароля
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input _input-placeholder input-grey _form-validation__input" data-default="Option 0" placeholder="********************">
+						</div>
+						<div class="input-checkbox input-checkbox_margin-20px _form-validation__body">
+							<input type="checkbox" id="popup-checkbox-2" class="_form-validation__input"> 
+							<label for="popup-checkbox-2">Регламентом Сервиса и Тарифами</label>
+						</div>
+						<div class="input-checkbox input-checkbox_margin-20px _form-validation__body">
+							<input type="checkbox" id="popup-checkbox-3" class="_form-validation__input"> 
+							<label for="popup-checkbox-3">Политикой Конфиденциальности и политикой Cookies</label>
+						</div>
+						<div class="input-checkbox input-checkbox_margin-20px _form-validation__body">
+							<input type="checkbox" id="popup-checkbox-4" class="_form-validation__input"> 
+							<label for="popup-checkbox-4">Политикой AML/KYC</label>
+						</div>
+						<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-registration">
+			<div class="popup__body">
+				<div class="popup__content">
+
+					<div class="popup__title">
+						<span>Восстановление пароля</span>
+
+						<a href="#" class="popup__close close-popup">
+							<span></span>
+						</a>
+					</div>
+					<div class="popup-img-text">
+						<div class="popup-img-text__img">
+							<img src="img/popup/1.png" alt="">
+						</div>
+						<div class="popup-img-text__text">
+							<p>
+								На указанную вами почту выслано письмо с дальнейшими инструкциями.
+							</p>
+							<p>
+								Для завершения восстановления пароля перейдите по ссылке, указанной в письме.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/custom.js"></script>
+	</body>
+</html>
